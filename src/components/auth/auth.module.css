@@ -1,0 +1,173 @@
+/* Main authentication section */
+#auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login/Register box */
+#auth .auth_block {
+    background-color: azure;
+    width: 40%;
+    max-width: 500px;
+    min-width: 320px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    box-sizing: border-box;
+}
+
+/* Header */
+.auth_block header {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Main */
+.auth_block main {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Form group */
+.auth_block main form .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+/* Label */
+.auth_block label {
+    padding: 5px 0;
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+}
+
+/* Input */
+.auth_block input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #111;
+    margin: 5px 0;
+    background: #efefef;
+
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Input focus */
+.auth_block input:focus {
+    border-color: #363b4e;
+    background-color: #fff;
+}
+
+/* Placeholder */
+.auth_block input::placeholder {
+    color: #999;
+}
+
+/* Button */
+.auth_block button {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    padding: 14px;
+
+    border-radius: 5px;
+    background-color: #363b4e;
+    color: #fff;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease-in-out;
+}
+
+/* Button hover */
+.auth_block button:hover {
+    background: #927fbf;
+}
+
+/* ------------------------- */
+/* Tablet */
+/* ------------------------- */
+
+@media (max-width: 768px) {
+
+    #auth {
+        padding: 20px;
+    }
+
+    #auth .auth_block {
+        width: 70%;
+    }
+
+    .auth_block header {
+        font-size: 22px;
+    }
+}
+
+/* ------------------------- */
+/* Mobile */
+/* ------------------------- */
+
+@media (max-width: 480px) {
+
+    #auth {
+        min-height: 90vh;
+        padding: 15px;
+    }
+
+    #auth .auth_block {
+        width: 100%;
+        min-width: unset;
+        padding: 15px;
+    }
+
+    .auth_block header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .auth_block main {
+        padding: 5px;
+    }
+
+    .auth_block main form .form-group {
+        padding: 8px 0;
+    }
+
+    .auth_block input {
+        padding: 11px;
+        font-size: 15px;
+    }
+
+    .auth_block button {
+        padding: 12px;
+        font-size: 15px;
+    }
+}

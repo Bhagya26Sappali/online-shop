@@ -1,0 +1,49 @@
+#navbar {
+  background-color: #31aaa9;
+  height: 60px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  color: aliceblue;
+  align-items: center;
+  height: inherit;
+}
+a{
+   text-decoration: none;
+}
+ a.active {
+  color: red;
+ 
+}
+
+
+.LogoBlock {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: flex-start;
+}
+.menuBlock {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menuBlock nav ul {
+  /* display: flex;
+    gap: 10px; */
+list-style-type: none;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+}
+li {
+}
+.head {
+  color: bisque;
+}
+.menuBlock nav ul li a {
+  padding: 10px;
+}
